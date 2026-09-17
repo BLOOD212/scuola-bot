@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    let idGruppo = '120363041928374650@g.us'; // SOSTITUISCI CON L'ID DEL TUO GRUPPO
+    let idGruppo = '120363429634386701@g.us';
 
     let domanda = text ? text : (m.quoted && m.quoted.text ? m.quoted.text : null);
 
@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         await m.reply('✅ La tua domanda è stata inviata con successo nel gruppo!');
     } catch (e) {
         console.error(e);
-        await m.reply('❌ Impossibile inviare la domanda nel gruppo. Verifica che l\'ID del gruppo sia corretto e che il bot sia al suo interno.');
+        await m.reply('❌ Impossibile inviare la domanda nel gruppo.');
     }
 };
 
